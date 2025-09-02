@@ -1,6 +1,6 @@
-package com.example.api_Help_Veiculos.repository;
+package com.example.api_HelpVeiculos.repository;
 
-import com.example.api_Help_Veiculos.model.Guinchos;
+import com.example.api_HelpVeiculos.model.Guinchos;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

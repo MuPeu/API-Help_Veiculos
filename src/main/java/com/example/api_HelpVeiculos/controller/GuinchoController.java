@@ -1,7 +1,7 @@
-package com.example.api_Help_Veiculos.controller;
+package com.example.api_HelpVeiculos.controller;
 
-import com.example.api_Help_Veiculos.model.Guinchos;
-import com.example.api_Help_Veiculos.service.GuinchoService;
+import com.example.api_HelpVeiculos.model.Guinchos;
+import com.example.api_HelpVeiculos.service.GuinchoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;

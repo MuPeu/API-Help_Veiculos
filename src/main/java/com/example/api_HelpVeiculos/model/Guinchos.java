@@ -1,4 +1,4 @@
-package com.example.api_Help_Veiculos.model;
+package com.example.api_HelpVeiculos.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import jakarta.persistence.*;
