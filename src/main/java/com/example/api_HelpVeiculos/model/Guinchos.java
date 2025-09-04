@@ -9,20 +9,26 @@ import jakarta.persistence.*;
 public class Guinchos {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonProperty("id_chamado")
     private Integer id_chamado;
 
+    @JsonProperty("placa")
     @Column (nullable = false)
     private String placa;
 
+    @JsonProperty("nome_cliente")
     @Column (nullable = false)
-    private String nomeCliente;
+    private String nome_cliente;
 
+    @JsonProperty("telefone")
     @Column (nullable = false)
     private String telefone;
 
+    @JsonProperty("endereco")
     @Column (nullable = false)
     private String endereco;
 
+    @JsonProperty("cidade")
     @Column (nullable = false)
     private String cidade;
 
@@ -30,10 +36,10 @@ public class Guinchos {
 
     }
 
-    public Guinchos(Integer id_chamado, String placa, String nomeCliente, String telefone, String endereco, String cidade) {
+    public Guinchos(Integer id_chamado, String placa, String nome_cliente, String telefone, String endereco, String cidade) {
         this.id_chamado = id_chamado;
         this.placa = placa;
-        this.nomeCliente = nomeCliente;
+        this.nome_cliente = nome_cliente;
         this.telefone = telefone;
         this.endereco = endereco;
         this.cidade = cidade;
@@ -54,8 +60,8 @@ public class Guinchos {
         }
     }
 
-    public String getNomeCliente() { return nomeCliente; }
-    public void setNomeCliente(String nomeCliente) { this.nomeCliente = nomeCliente; }
+    public String getNomeCliente() { return nome_cliente; }
+    public void setNomeCliente(String nome_cliente) { this.nome_cliente = nome_cliente; }
 
     public String getTelefone() { return telefone; }
     public void setTelefone(String telefone) {

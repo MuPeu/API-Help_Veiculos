@@ -22,6 +22,12 @@ public class GuinchoController {
         return new ResponseEntity<>(novoGuincho, HttpStatus.CREATED);
     }
 
+    @DeleteMapping("/deletar/{id_chamado}")
+    public ResponseEntity<Void> deletarGuincho(@PathVariable Integer id_chamado) {
+        guinchoService.deletarGuincho(id_chamado);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
     @GetMapping
     public ResponseEntity<List<Guinchos>> listarGuinchos() {
         List<Guinchos> guinchos = guinchoService.listarGuinchos();
